@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zBq-lT-w0g">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ywx-pj-bg7">
+            <objects>
+                <navigationController id="zBq-lT-w0g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="L4i-Lw-E6E">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LsC-CW-fye" kind="relationship" relationship="rootViewController" id="Gd3-AZ-VAM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kf-Ia-TtR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="172"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="JOQ-ix-pwf">
+            <objects>
+                <viewController id="LsC-CW-fye" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mHt-yg-dEY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTm-2l-yT2">
+                                <rect key="frame" x="91" y="304" width="193" height="59"/>
+                                <color key="backgroundColor" red="0.09787880971" green="1" blue="0.81044909279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="TDK-dW-8cr"/>
+                                    <constraint firstAttribute="height" constant="59" id="fT1-LE-ICk"/>
+                                </constraints>
+                                <state key="normal" title="检测图片"/>
+                                <connections>
+                                    <action selector="checkPicture" destination="LsC-CW-fye" eventType="touchUpInside" id="g6B-cl-bfD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NTm-2l-yT2" firstAttribute="centerX" secondItem="mHt-yg-dEY" secondAttribute="centerX" id="fzv-f8-V1Q"/>
+                            <constraint firstItem="NTm-2l-yT2" firstAttribute="centerY" secondItem="mHt-yg-dEY" secondAttribute="centerY" id="im2-Mx-HfF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IZh-df-a0V"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="gJZ-yW-iTD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEE-Fm-TNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="173.16341829085459"/>
+        </scene>
+    </scenes>
+</document>
